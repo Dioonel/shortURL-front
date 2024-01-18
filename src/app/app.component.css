@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+}
+
+input {
+  font-family: 'Roboto';
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 500px;
+  text-align: center;
+}
+
+button {
+  font-family: 'Roboto';
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #ddd;
+}
+
+.error-msg {
+  font-family: 'Roboto';
+  color: #cc0000;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+  background-color: rgba(255, 0, 0, 0.120);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.shortened-url {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 600px;
+  text-align: center;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.shortened-url a {
+  font-family: 'Roboto';
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+@media screen and (max-width: 640px) {
+  input {
+    width: 95%;
+  }
+  .shortened-url {
+    width: 95%;
+    flex-direction: column;
+  }
+  .shortened-url a {
+    font-size: 1.1em;
+  }
+  .shortened-url button {
+    width: 75%;
+  }
+}
